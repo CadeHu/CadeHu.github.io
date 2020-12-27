@@ -94,13 +94,10 @@
         var data = res.list[j].arr;
         var liTmpl = "";
         for (var i = 0, len = data.link.length; i < len; i++) {
-<<<<<<< HEAD
+
           var minSrc = 'https://raw.githubusercontent.com/CadeHu/Blog-Back-Up/master/min_photos/' + data.link[i];
           var src = 'https://raw.githubusercontent.com/CadeHu/Blog-Back-Up/master/photos/' + data.link[i];
-=======
-          var minSrc = 'https://raw.githubusercontent.com/CadeHu/CadeHu.github.io/Blog-Back-Up/master/min_photos/' + data.link[i];
-          var src = 'https://raw.githubusercontent.com/CadeHu/CadeHu.github.io/Blog-Back-Up/master/photos/' + data.link[i];
->>>>>>> d3597f1ae23a600df1708c35dc3be1e73dde63d0
+
           var type = data.type[i];
           var target = src + (type === 'video' ? '.mp4' : '.jpg');
           src += '';
